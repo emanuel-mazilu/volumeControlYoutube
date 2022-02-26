@@ -1,0 +1,25 @@
+{
+    "name": "Volume Control for html 5 videos",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "An extension controls Volume for html 5 videos",
+    "icons": {
+        "16": "volume.png",
+        "32": "volume.png",
+        "48": "volume.png",
+        "128": "volume.png"
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_title": "Volume Control"
+    },
+    "permissions": [
+        "https://*.youtube.com/watch*"
+    ]
+ }
+  
